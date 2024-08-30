@@ -1,0 +1,26 @@
+html {
+  background: #fafafa;
+}
+body {
+  font-family: "Urbanist", sans-serif;
+  overflow-x: hidden;
+}
+
+canvas {
+  position: relative;
+  z-index: 1;
+}
+
+/* Modal */
+/* Hide scrollbar */
+body.modal-open {
+  overflow: hidden;
+}
+
+.modal {
+  z-index: 9999;
+}
+
+.modal-overlay {
+  z-index: -1;
+}
