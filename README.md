@@ -1,4 +1,3 @@
-##Overview
 This is a web application built using React and Next.js, incorporating modern front-end libraries and state management practices. The application is designed to be modular and functional, with a focus on clean, maintainable code and user input validations.
 
 Features
