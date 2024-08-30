@@ -2,12 +2,12 @@
 
 ## DESCRIPTION
 
-THIS REPOSITORY CONTAINS THE FRONTEND APPLICATION FOR THE RAK BANK ASSIGNMENT. IT IS BUILT USING REACT AND PROVIDES THE USER INTERFACE FOR MANAGING ACCOUNTS.
+this repository contains the frontend application for the rak bank assignment. it is built using react and provides the user interface for managing accounts. The form state management and authetication makes use of a centralized store approach. This approach leads to a more organized, maintainable, and scalable application architecture, aligning with best practices in Redux and state management.
 
 ## PREREQUISITES
 
 - [NODE.JS](https://nodejs.org/) (VERSION 16.0.0 OR HIGHER)
-- [NPM](https://www.npmjs.com/) OR [YARN](https://yarnpkg.com/)
+- [NPM](https://www.npmjs.com/)
 
 ## INSTALLATION
 
