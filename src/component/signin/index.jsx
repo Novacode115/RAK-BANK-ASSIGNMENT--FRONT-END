@@ -3,7 +3,7 @@ import rakBankLogo from "../../assets/images/logo/rak-bank-logo.png";
 import SimpleResetPasswordModal from "../modal/PasswordResetModal";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
-import { login } from "../../reducer/authSlice";
+import { login } from "../../reducer/authActions";
 import axios from "../../api/axiosConfig";
 
 function LeftSide() {
@@ -15,7 +15,9 @@ function LeftSide() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const error = useSelector((state) => state.auth.error);
+  const sessionId = useSelector((state) => state.auth.sessionId);
 
+  //console.log("Current sessionId in LeftSide component:", sessionId);
   const togglePasswordVisibility = () => setShowPassword(!showPassword);
 
   const handleOpenModal = () => {
