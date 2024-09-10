@@ -64,12 +64,12 @@ function LeftSide() {
         />
       )}
       <header>
-        <img src={rakBankLogo} className="logo-image mx-auto" alt="Logo" />
+        <img src={rakBankLogo} className="w-80 h-auto mx-auto" alt="Logo" />
       </header>
       <div className="max-w-[450px] m-auto pt-8 pb-16">
-        <header className="text-center mb-8">
+        <header className="text-align-left mb-4">
           <h2 className="text-bgray-900 dark:text-white text-4xl font-semibold font-poppins mb-2">
-            Sign in to your Account.
+            Sign in to your Account
           </h2>
         </header>
         <form onSubmit={handleSubmit}>
