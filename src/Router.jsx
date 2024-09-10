@@ -3,6 +3,7 @@ import SignIn from "./pages/signin";
 import SignUp from "./pages/signup";
 import Error from "./pages/error";
 import Success from "./pages/success";
+import PaymentSelect from "./component/forms/PaymentSelect";
 
 const router = createBrowserRouter([
   {

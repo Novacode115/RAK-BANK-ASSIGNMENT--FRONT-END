@@ -1,3 +1,4 @@
+import React from "react";
 import PropTypes from "prop-types";
 import { useState } from "react";
 
@@ -12,7 +13,11 @@ export const SimpleResetPasswordModal = ({ close, handlePasswordReset }) => {
   };
 
   return (
-    <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50">
+    <div
+      role="dialog"
+      aria-labelledby="dialog-title"
+      className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-50"
+    >
       <div className="relative max-w-md w-full bg-white dark:bg-darkblack-600 p-8 rounded-lg shadow-lg">
         <button
           aria-label="Close"
@@ -51,6 +56,7 @@ export const SimpleResetPasswordModal = ({ close, handlePasswordReset }) => {
               id="password"
               className="mt-1 block w-full px-4 py-2 text-gray-900 dark:text-white bg-gray-100 dark:bg-darkblack-500 border border-gray-300 dark:border-gray-700 rounded-lg focus:outline-none focus:ring-success-300 focus:border-success-300"
               value={password}
+              onChange={(e) => setPassword(e.target.value)}
               placeholder="Enter your new password"
               required
             />

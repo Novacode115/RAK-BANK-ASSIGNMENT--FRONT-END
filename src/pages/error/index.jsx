@@ -1,7 +1,7 @@
 import img from "../../assets/images/illustration/404.svg";
 import { Link } from "react-router-dom";
 
-function Success() {
+function Error() {
   return (
     <section>
       <div className="flex items-center justify-center min-h-screen">
@@ -28,4 +28,4 @@ function Success() {
   );
 }
 
-export default Success;
+export default Error;
